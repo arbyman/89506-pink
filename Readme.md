@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Ванин](https://up.htmlacademy.ru/adaptive/9/user/89506).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 
 ---
 
