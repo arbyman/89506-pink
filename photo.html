@@ -6,21 +6,27 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        Pink
-      </div>
-      <nav class="main-nav main-nav--closed">
-        <span class="main-nav__toggle"></span>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a>Фотографии</a></li>
-            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="http://htmlacademy.ru">HTML Academy</a></li>
-          </ul>
+      <div class="page-header__top">
+        <div class="page-header__logo">
+          <a class="page-header__link" href="index.html">Pink</a>
         </div>
-      </nav>
-      <h2 class="page-header__title">Фотографии пользователей</h2>
+        <nav class="main-nav main-nav--closed">
+          <a class="main-nav__open" href="#">
+            <span class="main-nav__toggle"></span>
+          </a>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="index.html">Главная</a></li>
+              <li class="main-nav__item"><a>Фотографии</a></li>
+              <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a href="http://htmlacademy.ru">HTML Academy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="page-header__bottom">
+        <h2 class="page-header__title">Фотографии пользователей</h2>
+      </div>
     </header>
     <section class="photo">
       <p class="photo__text-lead">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
@@ -32,7 +38,6 @@
           <time class="photo__time" datetime="">(5 минут назад)</time>
           <p class="photo__desc">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <div class="photo__like">
-            <div class="photo__like-btn"></div>
             <div class="photo__like-stats">Нравится: 215</div>
           </div>
         </li>
@@ -42,7 +47,6 @@
           <time class="photo__time" datetime="">(5 часов назад)</time>
           <p class="photo__desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           <div class="photo__like">
-            <div class="photo__like-btn"></div>
             <div class="photo__like-stats">Нравится: 356</div>
           </div>
         </li>
@@ -52,7 +56,6 @@
           <time class="photo__time" datetime="">(12 часов назад)</time>
           <p  class="photo__desc">Соседи будут рады!</p>
           <div class="photo__like">
-            <div class="photo__like-btn"></div>
             <div class="photo__like-stats">Нравится: 666</div>
           </div>
         </li>
@@ -62,7 +65,6 @@
           <time class="photo__time" datetime="">(20 часов назад)</time>
           <p class="photo__desc">Здесь могла быть ваша цитата о высоком и вечном.</p>
           <div class="photo__like">
-            <div class="photo__like-btn"></div>
             <div class="photo__like-stats">Нравится: 215</div>
           </div>
         </li>
@@ -72,7 +74,6 @@
           <time class="photo__time" datetime="">(25 часов назад)</time>
           <p class="photo__desc">Самая кубанская в мире!</p>
           <div class="photo__like">
-            <div class="photo__like-btn"></div>
             <div class="photo__like-stats">Нравится: 4</div>
           </div>
         </li>
@@ -82,7 +83,6 @@
           <time class="photo__time" datetime="">(40 часов назад)</time>
           <p class="photo__desc">Где снег-то?</p>
           <div class="photo__like">
-            <div class="photo__like-btn"></div>
             <div class="photo__like-stats">Нравится: 150</div>
           </div>
         </li>
@@ -92,14 +92,13 @@
           <time class="photo__time" datetime="">(45 часов назад)</time>
           <p class="photo__desc">Всем GM и взаимные лайки!</p>
           <div class="photo__like">
-            <div class="photo__like-btn"></div>
             <div class="photo__like-stats">Нравится: 2560</div>
           </div>
         </li>
       </ul>
     </section>
     <section class="post-it">
-      <p class="post-it__text-lead">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+      <p class="post-it__text-lead">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       <div class="photo-edit">
         <img class="photo-edit__img" src="http://placehold.it/280x374" width="280px" height="374px" alt="Редактируемое фото">
         <div class="photo-edit__resize photo-edit__resize--active"></div>
@@ -107,11 +106,13 @@
         <div class="photo-edit__brightness"></div>
         <input class="photo-edit__range" type="range" min="1" max="100" step="1" value="80">
       </div>
-      <button class="btn-post">Запостить</button><br>
+      <button class="btn-post">Запостить</button>
       <button class="btn-cancel">Отмена</button>
     </section>
     <footer class="page-footer">
-        <img  class="page-footer__logo" src="http://placehold.it/147x40" width="147" height="40" alt="Pink">
+      <a class="page-footer__link" href="index.html">
+        <img class="page-footer__logo" src="http://placehold.it/147x40" width="147" height="40" alt="Pink">
+      </a>
         <ul class="social">
           <li class="social__link social__link--twitter"><a href="#">Twitter</a></li>
           <li class="social__link social__link--facebook"><a href="#">Facebook</a></li>

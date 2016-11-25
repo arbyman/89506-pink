@@ -6,24 +6,27 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        Pink
-      </div>
-      <nav class="main-nav main-nav--closed">
-        <span class="main-nav__toggle"></span>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="http://htmlacademy.ru">HTML Academy</a></li>
-          </ul>
+      <div class="page-header__top">
+        <div class="page-header__logo">
+          Pink
         </div>
-      </nav>
-      <img class="page-header__hand-phone-img" src="http://placehold.it/320x295" width="320px" height="295" alt="iPhone в руке">
+        <nav class="main-nav main-nav--closed">
+          <a class="main-nav__open" href="#">
+            <span class="main-nav__toggle"></span>
+          </a>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a>Главная</a></li>
+              <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+              <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a href="http://htmlacademy.ru">HTML Academy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <section class="download-apps">
-      <button class="download-app-btn">Скачать приложение</button>
+      <button class="download-app__btn">Скачать приложение</button>
       <ul class="download-apps__list">
         <li class="download-apps__item"><a href="#">Apple</a></li>
         <li class="download-apps__item"><a href="#">Android</a></li>
@@ -52,7 +55,6 @@
       </ul>
     </section>
     <section class="reviews">
-      <img class="reviews__photo" src="http://placehold.it/157x320" alt="Привет всем!">
       <div class="reviews__wrapper slider">
         <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
         <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
