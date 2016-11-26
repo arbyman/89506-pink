@@ -5,8 +5,121 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <div class="page-header__top">
+        <div class="page-header__logo">
+          Pink
+        </div>
+        <nav class="main-nav main-nav--closed">
+          <a class="main-nav__open" href="#">
+            <span class="main-nav__toggle"></span>
+          </a>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a>Главная</a></li>
+              <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+              <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a href="http://htmlacademy.ru">HTML Academy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="download-apps">
+      <button class="download-app__btn">Скачать приложение</button>
+      <ul class="download-apps__list">
+        <li class="download-apps__item"><a href="#">Apple</a></li>
+        <li class="download-apps__item"><a href="#">Android</a></li>
+        <li class="download-apps__item"><a href="#">Windows</a></li>
+      </ul>
+      <p class="download-apps__acces">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </section>
+    <section class="features">
+      <div class="features__slogan">
+        <h2 class="features__title">Устали от серости мегаполиса?</h2>
+        <h2 class="features__title">Нам есть, что вам предложить!</h2>
+      </div>
+      <ul class="features__list">
+        <li class="features__item">
+          <h3 class="features__subtitle">Поднимает настроение</h3>
+          <p class="features__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__subtitle">Меняет мир вокруг</h3>
+          <p class="features__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="features-item">
+          <h3 class="features__subtitle">Заводит новых друзей</h3>
+          <p class="features__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+        <div class="reviews__inner slider__inner">
+          <blockquote class="reviews__item">
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <p>&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+          </blockquote>
+        </div>
+        <div class="reviews__controls slider__controls">
+          <label for="reviews-input-1"></label>
+          <label for="reviews-input-2"></label>
+          <label for="reviews-input-3"></label>
+        </div>
+      </div>
+    </section>
+    <section class="equipment">
+      <div class="equiment__slider slider-equiment">
+        <input class="slider-equiment__input" type="radio" name="equiment" id="equiment-input-1" checked>
+        <input class="slider-equiment__input" type="radio" name="equiment" id="equiment-input-2">
+        <input class="slider-equiment__input" type="radio" name="equiment" id="equiment-input-3">
+        <div class="equiment__inner slider-equiment__inner">
+          <header class="equipment__header equiment__header--hit">
+            <h2 class="equiment__title">Стандарт</h2>
+            <b class="equiment__price">3,99 USD</b>
+          </header>
+          <table class="equiment__table">
+            <tr>
+              <td class="equiment__value">Розовый фильтр</td>
+              <td class="equiment__check equiment__check--checked"></td>
+            </tr>
+              <td class="equiment__value">Смайлики</td>
+              <td class="equiment__check equiment__check--checked"></td>
+            </tr>
+            <tr>
+              <td class="equiment__value">Комментарии</td>
+              <td class="equiment__check"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="equiment__controls slider-equiment__controls">
+          <label for="equiment-input-1"></label>
+          <label for="equiment-input-2"></label>
+          <label for="equiment-input-3"></label>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+      <b class="contacts__call">
+        Звоните:
+        <a class="contacts__call-number" href="tel:+78125556666">+7(812)555-66-66</a>
+      </b>
+      <b class="contacts__mail">
+        Пишите:
+        <a class="contacts__mail-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </b>
+      <b class="contacts__address">
+        Приезжайте в гости:
+        <a class="contacts__address-location" href="#map">ул. Большая Конюшенная, 19/8</a>
+      </b>
+      <div class="contacts__map">
+        <img class="contacts__map-image" src="http://placehold.it/320x202" alt="Карта - ул. Большая Конюшенная, 19/8">
+      </div>
+    </section>
   </body>
 </html>
