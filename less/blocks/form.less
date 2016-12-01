@@ -1,0 +1,123 @@
+.form{
+  background-color: white;
+}
+.form__fullname {
+  border: 0;
+  margin: 0 0 63px 0;
+  padding: 0;
+}
+.form__label-text {
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 0 22px;
+  font: 14px/30px "Open Sans", Verdana, sans-serif;
+  color: #d22856;
+  text-transform: uppercase;
+}
+.form__input-text {
+  padding: 15px 20px 14px;
+  width: 236px;
+  font: 18px/30px "Open Sans", Verdana, sans-serif;
+  color: #283645;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+  margin-bottom: 17px;
+}
+.form__achiev {
+  border: 0;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+.form__subtitle {
+  text-align: center;
+  font: 14px/18px "Open Sans", Verdana, sans-serif;
+  color: #d22856;
+  text-transform: uppercase;
+  padding: 0 20px;
+  margin-bottom: 40px;
+  
+  &--textarea {
+    margin-bottom: 16px;
+  }
+}
+.form__input-checkbox {
+  display: none;
+}
+.form__label-checkbox {
+  display: inline-block;
+  font: 18px/30px "Open Sans", Verdana, sans-serif;
+  color: #283645;
+  padding-left: 70px;
+  position: relative;
+  margin-bottom: 51px;
+  
+  &::before {
+    content:"";
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: -3px;
+    background: 
+      url("../../img/icon-yes.svg") no-repeat 50%,
+      white;
+  }
+}
+.form__contacts {
+  border: 0;
+  margin: 0 0 63px 0;
+  padding: 0;
+}
+.form__app {
+  border: 0;
+  margin: 0 0 40px 0;
+  padding: 0;  
+}
+.form__input-radio {
+  display: none;
+}
+.form__label-radio {
+  display: inline-block;
+  font: 18px/30px "Open Sans", Verdana, sans-serif;
+  color: #283645;
+  padding-left: 70px;
+  position: relative;
+  margin-bottom: 45px;
+  
+  &::before {
+    content:"";
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    position: absolute;
+    left: 1px;
+    top: -3px;
+    background: white;
+  }
+  &::after {
+    content:"";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 13px;
+    top: 9px;
+    background: #d22856;
+  }
+}
+.form__emotions {
+  border: 0;
+  padding: 0;
+  margin: 0 0 47px 0;
+}
+.form__textarea {
+  font: 18px/30px "Open Sans", Verdana, sans-serif;
+  color: #283645;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  padding: 15px 20px 0;
+  resize: none;
+}

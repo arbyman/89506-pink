@@ -1,0 +1,36 @@
+.main-nav {
+  display: none;
+}
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 70px 0 0 0;
+  background-color: #283645;
+}
+.main-nav__link {
+  display: block;
+  padding: 15px 0;
+  background-color:#283645;
+  color: #fff;
+  font: 18px/32px "Open Sans Bold", "Verdana", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000;
+}
+.main-nav__link {
+  &:hover {
+    color: @purple;
+  }
+  
+  &:active {
+    color: fade(@purple, 30%);
+  }
+  &:first-child {
+    box-shadow: 0 -1px 1px 0 black;
+  }
+}
+.main-nav--opened {
+  display: block;
+}
