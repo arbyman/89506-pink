@@ -1,0 +1,47 @@
+.slider {
+  background-color: white;
+}
+.slider__inner{
+  width: 840px;
+  transition: transform ease 0.3s;
+}
+.slider__input {
+  display: none;
+}
+.slider__controls{
+  text-align: center;
+}
+.slider__toggle {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: gray;
+  border: 3px solid white;
+  margin-left: 10px;
+}
+.slider__toggle:first-child{
+  margin-left: 0;
+}
+.slider__input-1:checked ~ .slider__controls .slider__toggle-1 {
+  border-color: black;
+  background-color: white;
+}
+.slider__input-2:checked ~ .slider__controls .slider__toggle-2 {
+  border-color: black;
+  background-color: white;
+}
+.slider__input-3:checked ~ .slider__controls .slider__toggle-3 {
+  border-color: black;
+  background-color: white;
+}
+.slider__input-1:checked ~ .slider__inner {
+  transform: translateX(0);
+}
+.slider__input-2:checked ~ .slider__inner {
+  transform: translateX(-280px);
+}
+.slider__input-3:checked ~ .slider__inner {
+  transform: translateX(-560px);
+}
