@@ -45,3 +45,27 @@
 .slider__input-3:checked ~ .slider__inner {
   transform: translateX(-560px);
 }
+
+@media (min-width: 700px) {
+  .slider__inner{
+    width: 1860px;  
+  }
+  .slider__input-2:checked ~ .slider__inner {
+    transform: translateX(-620px);
+  }
+  .slider__input-3:checked ~ .slider__inner {
+    transform: translateX(-1240px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider__inner{
+    width: 2880px;  
+  }
+  .slider__input-2:checked ~ .slider__inner {
+    transform: translateX(-960px);
+  }
+  .slider__input-3:checked ~ .slider__inner {
+    transform: translateX(-1920px);
+  }
+}

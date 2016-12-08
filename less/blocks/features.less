@@ -1,11 +1,9 @@
 .features {
-  background: url("../img/iphone-screen-mobile@1x.png") no-repeat,
-  white;
-  background-position: bottom center;
+  background: white url("../img/iphone-screen-mobile@1x.png") no-repeat bottom center;
 }
 .features__slogan {
   padding: 20px 0;
-  margin-bottom: 65px;
+  margin-bottom: 68px;
 }
 .features__title {
   font: 24px/28px "Open Sans Light", "Verdana", sans-serif;
@@ -21,14 +19,96 @@
 .features__item {
   margin-bottom: 40px;
   padding: 0;
+  &:last-child {
+    margin-bottom: 0px;
+  }
 }
 .features__subtitle {
   font: 18px/10px "Open Sans Bold", "Verdana", sans-serif;
   text-align: center;
   color: black;
+  margin-bottom: 19px;
 }
 .features__descr {
   font: 14px/24px "Open Sans", "Verdana", sans-serif;
   text-align: center;
   color: #283645;
+}
+@media (min-width: 700px) {
+  .features {
+    background: white url("../img/iphone-screen-mobile@1x.png") no-repeat 40px bottom;
+    background-size: 268px 547px;
+    .clearfix();
+  }
+  .features__title {
+    font: 40px/48px "Open Sans Light", "Verdana", sans-serif;
+    text-align: center;
+    margin: 30px 0 0;
+    color: #283645;
+    &:nth-child(2) {
+      width: 350px;
+      margin: 0 auto;
+    }
+  }
+  .features__subtitle,
+  .features__descr {
+    text-align: left;
+  }
+  .features__item {
+    margin-bottom: 42px;
+  }
+  .features__list{
+    width: 310px;
+    padding: 25px 0;
+    float: right;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__title {
+    font: 50px/60px "Open Sans Light", "Verdana", sans-serif;
+    text-align: center;
+    margin: 0;
+    color: #283645;
+    &:nth-child(2) {
+      width: 430px;
+    }
+  }
+  .features__slogan {
+    padding: 70px 0;
+    margin: 0;
+  }
+  .features {
+    background: #fff;
+  }
+  .features__list {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    float: none;
+    width: 960px;
+  }
+  .features__subtitle {
+    font: 30px/30px "Open Sans Bold", "Verdana", sans-serif;
+    text-align: center;
+    margin: 0 0 26px 0;
+    padding-top: 60px;
+    background: white;
+    box-shadow: 0 -5px 20px -9px black;
+  }
+  .features__descr {
+    font: 18px/30px "Open Sans", "Verdana", sans-serif;
+    text-align: center;
+  }
+  .features__item {
+    width: 240px;
+    padding-top: 305px;
+    background: url("../img/mobile-1.png") no-repeat center top;
+    &:nth-child(2) {
+      background: url("../img/mobile-2.png") no-repeat center top;   
+    }
+    &:nth-child(3) {
+      background: url("../img/mobile-3.png") no-repeat center top;      
+    }   
+  }
 }

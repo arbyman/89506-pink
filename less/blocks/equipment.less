@@ -55,3 +55,79 @@
 .equipment__inner {
   margin-bottom: 40px;
 }
+.equipment__tablet {
+  display: none;
+}
+@media (min-width: 700px) {
+  .equipment__tablet {
+    width: 620px;
+    height: 220px;
+    border-collapse: collapse;
+   }
+  .equipment__thead {
+    width: 155px;
+    height: 76px;
+    padding: 0;
+    border-bottom: 2px solid #354250;
+    border-right: 2px solid #f2f2f2;
+    border-radius: 2px;
+    &:first-child {
+      background: white;
+      border: none;
+    }
+    &:last-child {
+    border-right: 2px solid #354250;
+    }
+  }
+  .equipment__header {
+  }
+  .equipment__tr {
+    border: 2px solid #e5e5e5;
+  }
+  .equipment__check {
+    border: 2px solid #e5e5e5;
+  }
+  .equipment__title {
+    font: 16px/30px "Open Sans Bold", Verdana, sans-serif;
+    margin: 0;
+  }
+  .equipment__price {
+    font: 18px/30px "Open Sans Light", Verdana, sans-serif;
+  }
+  .equipment__wrapper {
+    display: none;  
+  }
+  .equipment__tablet {
+    display: block;
+  }
+  .equipment__value {
+    font: 14px/30px "Open Sans", Verdana, sans-serif;
+    text-transform: none;
+    height: 45px;
+    padding: 0 0 0 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .equipment__tablet {
+    width: 940px;
+    height: 280px;
+    border-collapse: collapse;
+    margin: 0;
+  }
+   .equipment__thead {
+    width: 236px;
+    height: 98px;
+  }
+  .equipment__title {
+    font: 18px/30px "Open Sans Bold", Verdana, sans-serif;
+    margin: 0;
+  }
+  .equipment__price {
+    font: 24px/30px "Open Sans Light", Verdana, sans-serif;
+  }
+  .equipment__value {
+    font: 18px/30px "Open Sans", Verdana, sans-serif;
+    height: 60px;
+  }
+}

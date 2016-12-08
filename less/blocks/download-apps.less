@@ -5,6 +5,14 @@
   justify-content: space-between;
   align-items: center;
 }
+.download-apps__title {
+  width: 200px;
+  text-align: center;
+  font: 40px/46px "Open Sans Light", Verdana, sans-serif;
+  color: white;
+  display: none;
+  margin: 0;
+}
 .download-apps__list {
   padding: 0;
   height: 60px;
@@ -12,6 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  margin: 0;
 }
 .download-apps__link {
   text-decoratin: none;
@@ -19,8 +28,7 @@
   text-align: center;
   font-size: 0;
   margin-left: 30px;
-}
-.download-apps__link {
+  
   &--apple {
     height: 57px;
     width: 47px;
@@ -44,4 +52,51 @@
   color: white;
   display: inline-block;
   text-align: center;
+  margin: 0;
+}
+.download-apps__btn {
+  border: 3px solid white;
+  padding: 15px 0 15px 0;
+  width: 280px;
+  border-radius: 35px;
+  color: white;
+  font: 18px/18px "Open Sans Bold", "Verdana", sans-serif;
+  background: #1d2631;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  outline: none;
+  
+  &:hover {
+    background-color: white;
+    color: @purple;
+  }
+  &:active {
+    background-color: white;
+    color: fade(@purple, 30%);
+  }
+}
+
+@media (min-width: 700px) {
+  .download-apps__title {
+    display: inline-block;
+  }
+  .download-apps__acces {
+    font: 18px/24px "Open Sans Light", "Verdana", sans-serif;
+    color: white;
+  }
+  .download-apps__btn {
+    width: 300px;
+    background: transparent;
+  }
+  .download-apps__link--android {
+    opacity: 0.4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .download-apps__title {
+    font: 50px/60px "Open Sans Light", "Verdana", sans-serif;
+    width: 250px;
+  }
 }

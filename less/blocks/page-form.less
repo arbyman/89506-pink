@@ -2,20 +2,41 @@
   background-color: white;
 }
 .page-form__text-lead {
-  height: 125px;
   text-align: center;
   margin: 0;
   font: 14px/30px "Open Sans", Verdana, sans-serif;
   color: #283645;
+  margin-bottom: 32px;
+  &--please {
+  display: none;
+  }
+  &--full {
+    display: none;    
+  }
 }
-.page-form__legend {
-  padding: 34px 0 14px 0;
-  margin: 0;
-  text-align: center;
-  font: 14px/30px "Open Sans", Verdana, sans-serif;
-  color: #000;
-  text-transform: uppercase;
+@media (min-width: 700px) {
+  .page-form__text-lead {
+    font-size: 18px;
+    width: 520px;
+    margin: 0 auto 32px;
+  }
+  .page-form__text-lead--please {
+    display: block;
+    margin-top: -33px;
+  }
 }
-.page-form__asterix {
-  color: #d22856;
+@media (min-width: 1200px) {
+  .page-form__text-lead {
+    width: 800px;
+    margin-bottom: 70px;
+    &--full {
+      display: block;
+    }
+    &--part {
+      display: none;
+    }
+    &--please {
+      display: none;
+    }
+  }
 }
