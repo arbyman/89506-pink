@@ -1,10 +1,18 @@
 .layout {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   height: 100%;
   background: white;
+}
+.layout__center {
+  width: 320px;
+  margin: 0 auto;
+}
+.layout__center-download {
+  width: 320px;
+  margin: 0 auto;  
 }
 .layout__content {
   flex: 1 0 auto;
@@ -22,7 +30,11 @@
 }
 @media (min-width: 660px) {
   .layout {
-    width: 700px;
+  }
+  .layout__center {
+    width: 660px;
+  }
+  .layout__content {
   }
   .layout__page-footer {
     height: 127px;
@@ -37,8 +49,12 @@
 }
 
 @media (min-width: 960px) {
-  .layout {
-    width: 1200px;
+  .layout__center {
+    width: 960px;
+  }
+  .layout__center-header {
+    width: 960px;
+    margin: 0 auto;
   }
   .layout__page-footer {
     height: 198px;
