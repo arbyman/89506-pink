@@ -4,33 +4,11 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  background: white;
 }
 .layout__content {
-  flex-grow: 1 0 auto;
-}
-.layout__download {
-  height: 220px;
-  padding: 26px 20px;
-}
-.layout__features {
-  padding: 20px 20px 350px;
-  margin-bottom: -35px;
-}
-.layout__reviews {
-  padding: 0 20px;
-  width: 280px;
-}
-.layout__equipment {
-  padding: 105px 0 54px 0;
-  width: 320px;
-}
-.layout__contacts {
-  padding-bottom: 400px;
-  height: 400px;
-}
-.layout__photo {
-  width: 280px;
-  margin: 0 auto;
+  flex: 1 0 auto;
+  background: white;
 }
 .layout__page-footer {
   height: 204px;
@@ -38,116 +16,38 @@
   flex: 0 0 auto;
 }
 .layout__page-form {
-  width: 280px;
   padding: 45px 20px 0;
 }
 .layout__post-it {
-  width: 320px;
 }
-@media (min-width: 700px) {
+@media (min-width: 660px) {
   .layout {
     width: 700px;
   }
-  .layout__download {
-    width: 340px;
-    height: 400px;
-    padding: 100px 20px 120px 20px;
-    background-color: transparent;
-  }
-  .layout__header {
-    margin-bottom: -620px;
-  }
-  .layout__features {
-    width: 620px;
-    min-height: 790px;
-    padding: 0 40px;
-    margin: 0 0 -63px 0;
-  }
-  .layout__breaking-news {
-    display: block;
-    height: 280px;
-    width: 310px;
-    padding: 60px 40px 60px 350px;
-  }
-  .layout__reviews {
-    padding: 0 40px;
-    width: 620px;
-  }
-  .layout__equipment {
-    padding: 70px 40px 54px 40px;
-    width: 620px;
-    padding-bottom: 100px;
-  }
-  .layout__contacts {
-    padding: 15px 40px 400px 40px;
-  }
-  .layout__post-it {
-    width: 660px;
-    padding: 26px 20px 0;
-  }
   .layout__page-footer {
     height: 127px;
-    width: 620px;
     padding: 0 40px;
   }
   .layout__photo {
     padding: 45px 40px 20px;
-    width: 620px;
   }
   .layout__page-form {
     padding: 90px 40px 0;
-    width: 620px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .layout {
     width: 1200px;
   }
-  .layout__header {
-    margin-bottom: -740px;
-  }
-  .layout__download {
-    width: 340px;
-    height: 520px;
-    padding: 100px 20px 120px 110px;
-  }
-  .layout__features {
-    width: 960px;
-    padding: 0 120px;
-  }
-  .layout__breaking-news {
-    height: 280px;
-    width: 661px;
-    padding: 120px 40px 60px 499px;
-  }
-  .layout__equipment {
-    padding: 70px 110px 54px 130px;
-    width: 960px;
-    padding-bottom: 100px;
-  }
-  .layout__contacts {
-    padding: 60px 120px 400px 120px;
-  }
   .layout__page-footer {
     height: 198px;
-    width: 940px;
     padding: 0 130px;
   }
   .layout__page-form {
     padding: 90px 120px 0;
-    width: 960px;
   }
   .layout__photo {
     padding: 45px 130px 0 130px;
-    width: 940px;
-  }
-  .layout__post-it {
-    width: 820px;
-    padding: 0 190px 40px;
-  }
-  .layout__reviews {
-    padding: 188px 120px 17px;
-    width: 960px;
   }
 }

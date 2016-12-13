@@ -1,16 +1,33 @@
 .contacts {
+  /*height: 400px;*/
   text-align: center;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background:
-    url("../img/bg-triangle-white-footer.svg") no-repeat 50% 50%,
-    url("../img/icon-map-marker.svg") no-repeat 55% 90%,
-    url("../img/bg-map-mobile@1x.png") no-repeat bottom,
-    white;
+  /*background: url("../img/bg-triangle-white-footer.svg") no-repeat 50% 0;*/
+  /*background: url("../img/icon-map-marker.svg") no-repeat 55% 90%;*/
+  position: relative;
+  &::before {
+    content:"";
+    position: absolute;
+    bottom: 170px;
+    left: 0;
+    z-index: 999;
+    border: 30px solid transparent;
+    border-right-width: 160px;
+    border-left-width: 160px;
+    border-top-color: white;
+    border-bottom-width: 0;
+  }
+}
+.contacts__map {
+  width: 320px;
+  height: 200px;
 }
 .contacts__title {
   font: 24px/30px "Open Sans Light", Verdana, sans-serif;
+  margin-bottom: 36px;
 }
 .contacts__call,
 .contacts__mail,
@@ -18,6 +35,10 @@
   font: 18px/18px "Open Sans Bold", Verdana, sans-serif;
   color: black;
   padding: 0 20px;
+  margin-bottom: 20px;
+}
+.contacts__address {
+  margin-bottom: 40px;
 }
 .contacts__call-number,
 .contacts__mail-link,
@@ -28,7 +49,21 @@
   display: block;
   padding: 5px 20px;
 }
-@media (min-width: 700px) {
+@media (min-width: 660px) {
+  .contacts {
+    &::before {
+      bottom: 316px;
+      border: 70px solid transparent;
+      border-right-width: 350px;
+      border-left-width: 350px;
+      border-top-color: white;
+      border-bottom-width: 0;
+    }
+  }
+  .contacts__map {
+    width: 700px;
+    height: 378px;
+  }
   .contacts__title {
     width: 400px;
     margin: 0 auto;
@@ -53,14 +88,25 @@
     padding-top: 50px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
+  .contacts {
+    &::before {
+      bottom: 401px;
+      border: 106px solid transparent;
+      border-right-width: 600px;
+      border-left-width: 600px;
+      border-top-color: white;
+      border-bottom-width: 0;
+    }
+  }
+  .contacts__map {
+    width: 1200px;
+    height: 500px;
+  }
   .contacts__title {
     width: 500px;
     margin: 0 auto;
     font: 50px/60px "Open Sans Light", Verdana, sans-serif;
-  }
-  .contacts {
-    display: block;
   }
   .contacts__call {
     display: inline-block;
