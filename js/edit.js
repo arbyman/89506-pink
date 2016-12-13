@@ -14,7 +14,7 @@ function cropToggle() {
   crop.classList.add('photo-edit__crop--active');
   fill.classList.remove('photo-edit__fill--active');
   contr.classList.remove('photo-edit__contrast--active');
-  rangeCrop.classList.toggle('photo-edit__range--show');
+  rangeCrop.classList.add('photo-edit__range--show');
   rangeFill.classList.remove('photo-edit__range--show');
   rangeContr.classList.remove('photo-edit__range--show');
 };
@@ -23,7 +23,7 @@ function fillToggle() {
   fill.classList.add('photo-edit__fill--active');
   contr.classList.remove('photo-edit__contrast--active');
   rangeCrop.classList.remove('photo-edit__range--show');
-  rangeFill.classList.toggle('photo-edit__range--show');
+  rangeFill.classList.add('photo-edit__range--show');
   rangeContr.classList.remove('photo-edit__range--show');
 };
 function contrToggle() {
@@ -32,5 +32,5 @@ function contrToggle() {
   contr.classList.add('photo-edit__contrast--active');
   rangeCrop.classList.remove('photo-edit__range--show');
   rangeFill.classList.remove('photo-edit__range--show');
-  rangeContr.classList.toggle('photo-edit__range--show');
+  rangeContr.classList.add('photo-edit__range--show');
 };
