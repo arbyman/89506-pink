@@ -1,7 +1,10 @@
 .features {
+  width: 280px;
+  margin: 0 auto;
   background: white url("../img/iphone-screen-mobile@1x.png") no-repeat bottom center;
   padding: 20px 0 340px;
   margin-bottom: -35px;
+  .clearfix();
 }
 .features__slogan {
   margin-bottom: 120px;
@@ -37,9 +40,10 @@
 }
 @media (min-width: 660px) {
   .features {
+    width: 660px;
     background-position: 40px bottom;
     background-size: 268px 547px;
-    padding: 20px 0 66px;
+    padding: 20px 40px 66px 0;
     .clearfix();
     margin-bottom: -64px;
   }
@@ -72,6 +76,7 @@
 
 @media (min-width: 960px) {
   .features {
+    width: auto;
     padding: 0;
     margin: 0;
   }

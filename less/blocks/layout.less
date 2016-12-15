@@ -1,5 +1,5 @@
 .layout {
-  min-width: 320px;
+  /*min-width: 320px;*/
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -9,6 +9,23 @@
 .layout__center {
   width: 320px;
   margin: 0 auto;
+  .clearfix();
+}
+.layout__center-form {
+  width: 280px;
+  margin: 0 auto;
+}
+.layout__center-equip {
+  width: 320px;
+  margin: 0 auto;
+}
+.layout__center-photo {
+  width: 280px;
+  margin: 0 auto;
+}
+.layout__center-photo-edit {
+  width: 280px;
+  margin: 0 auto;
 }
 .layout__center-download {
   width: 320px;
@@ -17,16 +34,14 @@
 .layout__content {
   flex: 1 0 auto;
   background: white;
+  overflow: hidden;
 }
 .layout__page-footer {
   height: 204px;
   padding: 40px 20px;
   flex: 0 0 auto;
-}
-.layout__page-form {
-  padding: 45px 20px 0;
-}
-.layout__post-it {
+  margin: 0 auto;
+  /*width: 280px;*/
 }
 @media (min-width: 660px) {
   .layout {
@@ -34,17 +49,34 @@
   .layout__center {
     width: 660px;
   }
+  .layout__center-form {
+      width: 620px;
+      margin: 0 auto;
+  }
+  .layout__center-photo {
+      width: 620px;
+      margin: 0 auto;
+  }
+  .layout__center-equip {
+    width: 620px;
+    margin: 0 auto;
+  }
+  .layout__center-photo-edit {
+    width: 620px;
+    margin: 0 auto;
+  }
   .layout__content {
   }
   .layout__page-footer {
     height: 127px;
+    width: 87%;
     padding: 0 40px;
   }
   .layout__photo {
-    padding: 45px 40px 20px;
+    padding: 45px 0 20px;
   }
   .layout__page-form {
-    padding: 90px 40px 0;
+    padding: 90px 0 0;
   }
 }
 
@@ -52,18 +84,43 @@
   .layout__center {
     width: 960px;
   }
+  .layout__center-features {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .layout__center-equip {
+    width: 940px;
+    margin: 0 auto;
+  }
   .layout__center-header {
     width: 960px;
     margin: 0 auto;
   }
+  .layout__center-form {
+    width: 940px;
+    margin: 0 auto;
+  }
+  .layout__center-photo {
+    width: 940px;
+    margin: 0 auto;
+  }
+  .layout__center-photo-edit {
+    width: 801px;
+    margin: 0 auto;
+  }
+  .layout__center-footer {
+    /*width: 940px;
+    margin: 0 auto;*/
+  }
   .layout__page-footer {
     height: 198px;
-    padding: 0 130px;
+    /*padding: 0 130px;*/
+    width: 80%;
   }
   .layout__page-form {
-    padding: 90px 120px 0;
+    padding: 90px 0 0;
   }
   .layout__photo {
-    padding: 45px 130px 0 130px;
+    padding: 45px 0 0 0;
   }
 }

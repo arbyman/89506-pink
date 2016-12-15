@@ -61,7 +61,7 @@
       position: absolute;
       left: 0;
       top: -3px;
-      background: white url("../../img/icon-yes-1.svg") no-repeat 50%;
+      background: white url("../img/icon-yes-1.svg") no-repeat 50%;
     }
     &:hover::before {
       border-color: #000;
@@ -96,7 +96,7 @@
     }
   &:active::before {
       border-color: #d22856;
-      background: white url("../img/icon-yes.svg") no-repeat 50%;
+      background: white url("../img/icon-yes-1.svg") no-repeat 50%;
     }
 }
 .form__contacts {
@@ -211,6 +211,7 @@
 .form__btn {
   width: 280px;
   padding: 15px 45px 17px;
+  margin: 0 auto;
   font: 18px/30px "Open Sans Bold", Verdana, sans-serif;
   color: #fff;
   text-transform: uppercase;
@@ -327,6 +328,7 @@
   }
   .form__btn {
     width: 300px;
+    margin: 0;
   }
   .form__legend {
     display: inline-block;
@@ -346,7 +348,6 @@
 
 @media (min-width: 960px) {
   .form {
-    padding: 0 10px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-end;
