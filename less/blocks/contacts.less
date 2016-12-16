@@ -1,23 +1,41 @@
 .contacts {
   text-align: center;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background:
-    url("../img/bg-triangle-white-footer.svg") no-repeat 50% 50%,
-    url("../img/icon-map-marker.svg") no-repeat 55% 90%,
-    url("../img/bg-map-mobile@1x.png") no-repeat bottom,
-    white;
+  position: relative;
+  &::before {
+    content:"";
+    position: absolute;
+    bottom: 170px;
+    left: 0;
+    z-index: 999;
+    border: 30px solid transparent;
+    border-right-width: 160px;
+    border-left-width: 160px;
+    border-top-color: white;
+    border-bottom-width: 0;
+  }
+}
+.contacts__map {
+  width: 100%;
+  height: 200px;
 }
 .contacts__title {
   font: 24px/30px "Open Sans Light", Verdana, sans-serif;
+  margin-bottom: 36px;
 }
 .contacts__call,
 .contacts__mail,
 .contacts__address {
   font: 18px/18px "Open Sans Bold", Verdana, sans-serif;
   color: black;
-  padding: 0 20px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.contacts__address {
+  margin-bottom: 40px;
 }
 .contacts__call-number,
 .contacts__mail-link,
@@ -27,4 +45,78 @@
   color: #d22856;
   display: block;
   padding: 5px 20px;
+}
+@media (min-width: 660px) {
+  .contacts {
+    &::before {
+      bottom: 316px;
+      border: 70px solid transparent;
+      border-right-width: 350px;
+      border-left-width: 350px;
+      border-top-color: white;
+      border-bottom-width: 0;
+    }
+  }
+  .contacts__map {
+    height: 378px;
+  }
+  .contacts__title {
+    width: 400px;
+    margin: 0 auto;
+    font: 40px/48px "Open Sans Light", Verdana, sans-serif;
+  }
+  .contacts {
+    display: block;
+  }
+  .contacts__call {
+    display: inline-block;
+    padding-left: 27px;
+    padding-top: 46px;
+  }
+  .contacts__mail {
+    display: inline-block;
+    padding-top: 44px;
+    padding-right: 10px;
+  }
+  .contacts__address {
+    display: inline-block;
+    width: 260px;
+    padding-top: 50px;
+  }
+}
+@media (min-width: 960px) {
+  .contacts {
+    &::before {
+      bottom: 401px;
+      border: 106px solid transparent;
+      border-right-width: 600px;
+      border-left-width: 600px;
+      border-top-color: white;
+      border-bottom-width: 0;
+    }
+  }
+  .contacts__map {
+    width: 100%;
+    height: 500px;
+  }
+  .contacts__title {
+    width: 500px;
+    margin: 0 auto;
+    font: 50px/60px "Open Sans Light", Verdana, sans-serif;
+  }
+  .contacts__call {
+    display: inline-block;
+    padding-left: 27px;
+    padding-top: 46px;
+  }
+  .contacts__mail {
+    display: inline-block;
+    padding-top: 44px;
+    padding-right: 10px;
+  }
+  .contacts__address {
+    display: inline-block;
+    width: 260px;
+    padding-top: 50px;
+  }
 }

@@ -4,12 +4,28 @@
 .post-it__text-lead {
   height: 135px;
   text-align: center;
+  margin-bottom: 20px;
 }
 .post-it__text {
   margin: 0;
   font: 14px/30px "Open Sans", Verdana, sans-serif;
   color: #283645;
 }
-.photo-edit {
-  padding: 20px;
+
+@media (min-width: 660px) {
+  .post-it {
+    padding: 26px 0 0;
+  }
+  .post-it__text {
+    font-size: 18px;
+  }
+  .post-it__text-lead {
+    margin: 0 49px;
+    height: 185px;
+  }
+}
+@media (min-width: 960px) {
+  .post-it {
+    padding: 0 0 40px;
+  }
 }

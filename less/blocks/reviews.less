@@ -1,14 +1,17 @@
 .reviews {
   background-color: white;
+  padding: 0;
+  margin-bottom: 110px;
 }
 .reviews__wrapper {
-  width: 280px;
+  width: 320px;
   overflow: hidden;
+  .clearfix();
 }
 .reviews__item {
-  width: 280px;
+  width: 320px;
   background-color: white;
-  padding: 50px 0 20px;
+  padding: 50px 0 10px;
   margin: 0;
   float: left;
 }
@@ -23,4 +26,98 @@
   font: 14px/30px "Open Sans", "Verdana", sans-serif;
   text-align: center;
   color: #283645;
+}
+.reviews__author-about {
+  font: 14px/30px "Open Sans", "Verdana", sans-serif;
+  color: #283645;
+  text-align: center;
+  display: none;
+}
+@media (min-width: 660px) {
+  .reviews {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .reviews__wrapper {
+    width: 640px;
+  }
+  .reviews__item {
+    width: 660px;
+    min-height: 200px;
+    position: relative;
+  }
+  .reviews__descr {
+    font: 18px/30px "Open Sans", "Verdana", sans-serif;
+  }
+  .reviews__author-name {
+    width: 200px;
+    font: 20px/30px "Open Sans Bold", "Verdana", sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 34%;
+    margin-bottom: 16px;
+  }
+  .reviews__author-about {
+    display: block;
+  }
+  .reviews__item {
+    padding-top: 12px;
+    margin-bottom: 13px;
+  }
+}
+
+@media (min-width: 960px) {
+  .reviews {
+    padding: 120px 0 17px;
+    margin-bottom: 65px;
+  }
+  .reviews__item {
+    width: 960px;
+  }
+  .reviews__author-name {
+    width: 250px;
+    font-size: 24px;
+  }
+  .reviews__author-about {
+    font-size: 18px;
+  }
+  .reviews__descr {
+    width: 720px;
+    margin: 0 auto;
+  }
+  .reviews__item {
+    height: 180px;
+  }
+  .reviews__controls {
+    display: none;
+  }
+  .reviews__wrapper {
+    width: 960px;
+    position: relative;
+    &::before {
+      content: "";
+      width: 40px;
+      height: 117px;
+      position: absolute;
+      z-index: 5;
+      background: url("../img/arrow-left.png") no-repeat left center;
+      left: 7px;
+      top: 0;
+      cursor: pointer;
+  }
+      &::after {
+      content: "";
+      width: 40px;
+      height: 117px;
+      position: absolute;
+      z-index: 5;
+      background: url("../img/arrow-right.png") no-repeat center left;
+      right: -5px;
+      top: 0;
+      cursor: pointer;
+    }
+  }
+  .reviews__author-name {
+    left: 37%;
+  }
 }

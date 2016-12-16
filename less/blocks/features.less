@@ -1,11 +1,11 @@
 .features {
-  background: url("../img/iphone-screen-mobile@1x.png") no-repeat,
-  white;
-  background-position: bottom center;
+  background: white url("../img/iphone-screen-mobile@1x.png") no-repeat bottom center;
+  padding: 20px 0 340px;
+  margin-bottom: -35px;
+  .clearfix();
 }
 .features__slogan {
-  padding: 20px 0;
-  margin-bottom: 65px;
+  margin-bottom: 120px;
 }
 .features__title {
   font: 24px/28px "Open Sans Light", "Verdana", sans-serif;
@@ -15,20 +15,110 @@
 }
 .features__list {
   list-style: none;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 .features__item {
   margin-bottom: 40px;
   padding: 0;
+  &:last-child {
+    margin-bottom: 0px;
+  }
 }
 .features__subtitle {
   font: 18px/10px "Open Sans Bold", "Verdana", sans-serif;
   text-align: center;
   color: black;
+  margin-bottom: 19px;
 }
 .features__descr {
   font: 14px/24px "Open Sans", "Verdana", sans-serif;
   text-align: center;
   color: #283645;
+}
+@media (min-width: 660px) {
+  .features {
+    .clearfix();
+    padding: 20px 40px 0 0;
+    margin-bottom: -64px;
+    background: white;
+  }
+  .features__slogan {
+    margin-bottom: 84px;
+  }
+  .features__title {
+    font: 40px/48px "Open Sans Light", "Verdana", sans-serif;
+    text-align: center;
+    margin: 30px 0 0;
+    color: #283645;
+    &:nth-child(2) {
+      width: 350px;
+      margin: 0 auto;
+    }
+  }
+  .features__subtitle,
+  .features__descr {
+    text-align: left;
+  }
+  .features__item {
+    margin-bottom: 42px;
+    &:last-child {
+      padding-bottom: 66px;
+    }
+  }
+  .features__list{
+    width: 310px;
+    padding: 25px 0;
+    float: right;
+  }
+}
+
+@media (min-width: 960px) {
+  .features {
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .features__title {
+    font: 50px/60px "Open Sans Light", "Verdana", sans-serif;
+    text-align: center;
+    margin: 0;
+    color: #283645;
+    &:nth-child(2) {
+      width: 430px;
+    }
+  }
+  .features__slogan {
+    padding: 68px 0 76px;
+    margin: 0;
+  }
+  .features__list {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 960px;
+  }
+  .features__subtitle {
+    font: 30px/30px "Open Sans Bold", "Verdana", sans-serif;
+    text-align: center;
+    margin: 0 0 23px 0;
+    padding-top: 58px;
+    background: white;
+    box-shadow: 0 -5px 20px -9px black;
+  }
+  .features__descr {
+    font: 18px/30px "Open Sans", "Verdana", sans-serif;
+    text-align: center;
+  }
+  .features__item {
+    width: 240px;
+    padding-top: 300px;
+    background: url("../img/mobile-1.png") no-repeat center top;
+    &:nth-child(2) {
+      background: url("../img/mobile-2.png") no-repeat center top;
+    }
+    &:nth-child(3) {
+      background: url("../img/mobile-3.png") no-repeat center top;
+    }
+  }
 }
