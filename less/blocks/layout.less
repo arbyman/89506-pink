@@ -9,7 +9,10 @@
 .layout__center {
   width: 320px;
   margin: 0 auto;
-  .clearfix();
+}
+.layout__center-features {
+  width: 280px;
+  margin: 0 auto;
 }
 .layout__center-form {
   width: 280px;
@@ -20,7 +23,7 @@
   margin: 0 auto;
 }
 .layout__center-photo {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
 }
 .layout__center-photo-edit {
@@ -34,14 +37,21 @@
 .layout__content {
   flex: 1 0 auto;
   background: white;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .layout__page-footer {
   height: 204px;
-  padding: 40px 20px;
+  padding: 40px 0;
   flex: 0 0 auto;
-  margin: 0 auto;
   /*width: 280px;*/
+}
+.layout__center-footer {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 @media (min-width: 660px) {
   .layout {
@@ -49,12 +59,35 @@
   .layout__center {
     width: 660px;
   }
+  .layout__center-footer {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .layout__center-breaking-news {
+    width: 620px;
+    margin: 0 auto;
+    background: white url("../img/24.png") no-repeat left top;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+  }
+  .layout__center-features {
+    width: 660px;
+    .clearfix();
+    background: white url("../img/iphone-screen-mobile@1x.png") no-repeat;
+    background-position: 40px bottom;
+    background-size: 268px 547px;
+  }
   .layout__center-form {
       width: 620px;
       margin: 0 auto;
   }
   .layout__center-photo {
-      width: 620px;
+      width: 700px;
       margin: 0 auto;
   }
   .layout__center-equip {
@@ -69,7 +102,6 @@
   }
   .layout__page-footer {
     height: 127px;
-    width: 87%;
     padding: 0 40px;
   }
   .layout__photo {
@@ -86,7 +118,13 @@
   }
   .layout__center-features {
     width: 960px;
-    margin: 0 auto;
+    background: white;
+  }
+  .layout__center-breaking-news {
+    width: 960px;
+    background: white url("../img/24.png") no-repeat 132px 5px;
+    background-size: 298px 345px;
+    background-position: 13px top;
   }
   .layout__center-equip {
     width: 940px;
@@ -101,7 +139,7 @@
     margin: 0 auto;
   }
   .layout__center-photo {
-    width: 940px;
+    width: 1200px;
     margin: 0 auto;
   }
   .layout__center-photo-edit {
@@ -115,7 +153,13 @@
   .layout__page-footer {
     height: 198px;
     /*padding: 0 130px;*/
-    width: 80%;
+  }
+  .layout__center-footer {
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
   .layout__page-form {
     padding: 90px 0 0;

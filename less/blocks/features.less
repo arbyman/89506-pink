@@ -1,6 +1,4 @@
 .features {
-  width: 280px;
-  margin: 0 auto;
   background: white url("../img/iphone-screen-mobile@1x.png") no-repeat bottom center;
   padding: 20px 0 340px;
   margin-bottom: -35px;
@@ -40,12 +38,10 @@
 }
 @media (min-width: 660px) {
   .features {
-    width: 660px;
-    background-position: 40px bottom;
-    background-size: 268px 547px;
-    padding: 20px 40px 66px 0;
     .clearfix();
+    padding: 20px 40px 0 0;
     margin-bottom: -64px;
+    background: white;
   }
   .features__slogan {
     margin-bottom: 84px;
@@ -66,6 +62,9 @@
   }
   .features__item {
     margin-bottom: 42px;
+    &:last-child {
+      padding-bottom: 66px;
+    }
   }
   .features__list{
     width: 310px;
@@ -92,9 +91,6 @@
   .features__slogan {
     padding: 68px 0 76px;
     margin: 0;
-  }
-  .features {
-    background: #fff;
   }
   .features__list {
     padding: 0;
