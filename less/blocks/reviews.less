@@ -1,17 +1,17 @@
 .reviews {
   background-color: white;
   padding: 0;
-  margin-bottom: 110px;
+  margin-bottom: 106px;
 }
 .reviews__wrapper {
-  width: 320px;
+  width: 280px;
   overflow: hidden;
   .clearfix();
 }
 .reviews__item {
-  width: 320px;
+  width: 280px;
   background-color: white;
-  padding: 50px 0 10px;
+  padding: 50px 0 15px;
   margin: 0;
   float: left;
 }
@@ -26,6 +26,12 @@
   font: 14px/30px "Open Sans", "Verdana", sans-serif;
   text-align: center;
   color: #283645;
+    &::before {
+      content: open-quote;
+    }
+    &::after {
+      content: close-quote;
+    }
 }
 .reviews__author-about {
   font: 14px/30px "Open Sans", "Verdana", sans-serif;
@@ -36,15 +42,18 @@
 @media (min-width: 660px) {
   .reviews {
     padding: 0;
-    margin-bottom: 0;
+    margin-bottom: 31px;
   }
   .reviews__wrapper {
     width: 640px;
   }
   .reviews__item {
     width: 660px;
-    min-height: 200px;
+    /*min-height: 200px;*/
+    padding-bottom: 87px;
     position: relative;
+    padding-top: 12px;
+    margin-bottom: 18px;
   }
   .reviews__descr {
     font: 18px/30px "Open Sans", "Verdana", sans-serif;
@@ -54,25 +63,24 @@
     font: 20px/30px "Open Sans Bold", "Verdana", sans-serif;
     position: absolute;
     bottom: 0;
-    left: 34%;
-    margin-bottom: 16px;
+    left: 35%;
+    margin-bottom: 12px;
   }
   .reviews__author-about {
     display: block;
   }
-  .reviews__item {
-    padding-top: 12px;
-    margin-bottom: 13px;
+  .reviews__controls {
+    margin-left: 20px;
   }
 }
 
 @media (min-width: 960px) {
   .reviews {
-    padding: 120px 0 17px;
-    margin-bottom: 65px;
+    padding: 108px 0 17px;
+    margin-bottom: 69px;
   }
   .reviews__item {
-    width: 960px;
+    width: 940px;
   }
   .reviews__author-name {
     width: 250px;
@@ -84,15 +92,22 @@
   .reviews__descr {
     width: 720px;
     margin: 0 auto;
+    &::before {
+      content: no-open-quote;
+    }
+    &::after {
+      content: no-close-quote;
+    }
   }
   .reviews__item {
-    height: 180px;
+    padding-bottom: 108px;
+    width: 940px;
   }
   .reviews__controls {
     display: none;
   }
   .reviews__wrapper {
-    width: 960px;
+    width: 940px;
     position: relative;
     &::before {
       content: "";
@@ -101,8 +116,8 @@
       position: absolute;
       z-index: 5;
       background: url("../img/arrow-left.png") no-repeat left center;
-      left: 7px;
-      top: 0;
+      left: 3px;
+      top: 1px;
       cursor: pointer;
   }
       &::after {
@@ -112,7 +127,7 @@
       position: absolute;
       z-index: 5;
       background: url("../img/arrow-right.png") no-repeat center left;
-      right: -5px;
+      right: -14px;
       top: 0;
       cursor: pointer;
     }

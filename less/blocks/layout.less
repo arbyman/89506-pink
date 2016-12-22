@@ -1,5 +1,4 @@
 .layout {
-  /*min-width: 320px;*/
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -8,6 +7,27 @@
 }
 .layout__center {
   width: 320px;
+  margin: 0 auto;
+}
+.layout__center-contacts {
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+  &::after {
+    content:"";
+    position: absolute;
+    bottom: -70px;
+    left: -20px;
+    z-index: 999;
+    border: 30px solid transparent;
+    border-right-width: 160px;
+    border-left-width: 160px;
+    border-top-color: white;
+    border-bottom-width: 0;
+  }
+}
+.layout__center-reviews {
+  width: 280px;
   margin: 0 auto;
 }
 .layout__center-features {
@@ -19,7 +39,7 @@
   margin: 0 auto;
 }
 .layout__center-equip {
-  width: 320px;
+  width: 300px;
   margin: 0 auto;
 }
 .layout__center-photo {
@@ -31,19 +51,12 @@
   margin: 0 auto;
 }
 .layout__center-download {
-  width: 320px;
-  margin: 0 auto;  
+  width: 280px;
+  margin: 0 auto;
 }
 .layout__content {
   flex: 1 0 auto;
   background: white;
-  /*overflow: hidden;*/
-}
-.layout__page-footer {
-  height: 204px;
-  padding: 40px 0;
-  flex: 0 0 auto;
-  /*width: 280px;*/
 }
 .layout__center-footer {
   width: 280px;
@@ -54,13 +67,14 @@
   align-items: center;
 }
 @media (min-width: 660px) {
-  .layout {
-  }
   .layout__center {
     width: 660px;
   }
+  .layout__center-download {
+    width: 320px;
+  }
   .layout__center-footer {
-    width: 700px;
+    width: 620px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -69,18 +83,36 @@
   .layout__center-breaking-news {
     width: 620px;
     margin: 0 auto;
-    background: white url("../img/24.png") no-repeat left top;
+    background: white url("../img/24.png") no-repeat left -7px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     
   }
   .layout__center-features {
-    width: 660px;
+    width: 620px;
     .clearfix();
     background: white url("../img/iphone-screen-mobile@1x.png") no-repeat;
-    background-position: 40px bottom;
+    background-position: left bottom;
     background-size: 268px 547px;
+  }
+  .layout__center-reviews {
+    width: 660px;
+  }
+  .layout__center-contacts {
+    width: 620px;
+    margin: 0 auto;
+    position: relative;
+    .clearfix();
+    &::after {
+      bottom: -94px;
+      left: -40px;
+      border: 94px solid transparent;
+      border-right-width: 350px;
+      border-left-width: 350px;
+      border-top-color: white;
+      border-bottom-width: 0;
+    }
   }
   .layout__center-form {
       width: 620px;
@@ -98,48 +130,56 @@
     width: 620px;
     margin: 0 auto;
   }
-  .layout__content {
-  }
-  .layout__page-footer {
-    height: 127px;
-    padding: 0 40px;
-  }
-  .layout__photo {
-    padding: 45px 0 20px;
-  }
-  .layout__page-form {
-    padding: 90px 0 0;
-  }
 }
-
 @media (min-width: 960px) {
   .layout__center {
     width: 960px;
   }
   .layout__center-features {
-    width: 960px;
+    width: 940px;
     background: white;
   }
   .layout__center-breaking-news {
-    width: 960px;
-    background: white url("../img/24.png") no-repeat 132px 5px;
+    width: 940px;
+    padding-top: 60px;
+    background: white url("../img/24.png") no-repeat;
     background-size: 298px 345px;
-    background-position: 13px top;
+    background-position: 2px top;
   }
   .layout__center-equip {
     width: 940px;
     margin: 0 auto;
   }
-  .layout__center-header {
-    width: 944px;
+  .layout__center-contacts {
+    width: 940px;
     margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    &::after {
+      bottom: -101px;
+      left: -130px;
+      border: 101px solid transparent;
+      border-right-width: 600px;
+      border-left-width: 600px;
+      border-top-color: white;
+      border-bottom-width: 0;
+    }
+  }
+  .layout__center-reviews {
+    width: 940px;
+  }
+  .layout__center-header {
+    width: 940px;
+    margin: 0 auto;
+    .clearfix();
   }
   .layout__center-form {
     width: 940px;
     margin: 0 auto;
   }
   .layout__center-photo {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   .layout__center-photo-edit {
@@ -147,24 +187,10 @@
     margin: 0 auto;
   }
   .layout__center-footer {
-    /*width: 940px;
-    margin: 0 auto;*/
-  }
-  .layout__page-footer {
-    height: 198px;
-    /*padding: 0 130px;*/
-  }
-  .layout__center-footer {
-    width: 960px;
+    width: 940px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-  .layout__page-form {
-    padding: 90px 0 0;
-  }
-  .layout__photo {
-    padding: 45px 0 0 0;
   }
 }
