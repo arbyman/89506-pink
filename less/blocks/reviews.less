@@ -26,6 +26,12 @@
   font: 14px/30px "Open Sans", "Verdana", sans-serif;
   text-align: center;
   color: #283645;
+    &::before {
+      content: open-quote;
+    }
+    &::after {
+      content: close-quote;
+    }
 }
 .reviews__author-about {
   font: 14px/30px "Open Sans", "Verdana", sans-serif;
@@ -43,7 +49,8 @@
   }
   .reviews__item {
     width: 660px;
-    min-height: 200px;
+    /*min-height: 200px;*/
+    padding-bottom: 87px;
     position: relative;
     padding-top: 12px;
     margin-bottom: 18px;
@@ -70,7 +77,7 @@
 @media (min-width: 960px) {
   .reviews {
     padding: 108px 0 17px;
-    margin-bottom: 73px;
+    margin-bottom: 69px;
   }
   .reviews__item {
     width: 940px;
@@ -85,9 +92,15 @@
   .reviews__descr {
     width: 720px;
     margin: 0 auto;
+    &::before {
+      content: no-open-quote;
+    }
+    &::after {
+      content: no-close-quote;
+    }
   }
   .reviews__item {
-    min-height: 182px;
+    padding-bottom: 108px;
     width: 940px;
   }
   .reviews__controls {

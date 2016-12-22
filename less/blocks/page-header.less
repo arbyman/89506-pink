@@ -42,7 +42,7 @@
   float: left;
 }
 .page-header__bottom {
-  height: 170px;
+  min-height: 170px;
   text-align: center;
   vertical-align: middle;
   background: #1d2631 url("../img/bg-back-tablet@1x.png") no-repeat 50% -109px;
@@ -94,19 +94,16 @@
 
     &--iphone-in-hand {
       background:
-        url("../img/iphone-hand-tablet.png") no-repeat center bottom,
+        url("../img/iphone-hand-tablet.png") no-repeat 72% bottom,
         #1d2631 url("../img/bg-desktop.jpg") no-repeat;
       padding-bottom: 740px;
       margin-bottom: -740px;
-      background-size: auto, cover;
+      background-size: 786px, cover;
     }
     background-size: cover;
   }
   .page-header__toggle-menu {
     display: none;
-  }
-  .page-header__top {
-    /*padding: 0 120px;*/
   }
   .page-header__logo {
     padding-top: 28px;
