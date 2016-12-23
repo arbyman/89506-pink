@@ -52,14 +52,24 @@
     width: 620px;
     display: flex;
     justify-content: space-between;
-    padding: 46px 0;
+    padding: 46px 0 36px;
     background-color: transparent;
   }
   .main-nav__link {
     padding: 0;
+    padding-bottom: 8px;
     background-color: transparent;
     border-width: 0;
     font: 18px/18px "Open Sans", "Verdana", sans-serif;
     text-transform: none;
+    &--active {
+      border-bottom: 2px solid white;
+    }
+    &--active:hover {
+      border-bottom: 2px solid #D22856;
+    }
+    &:first-child {
+      box-shadow: none;
+    }
   }
 }

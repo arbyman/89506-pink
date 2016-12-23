@@ -83,11 +83,25 @@
   .layout__center-breaking-news {
     width: 620px;
     margin: 0 auto;
-    background: white url("../img/24.png") no-repeat left -7px;
+    background: white url("../img/icon-timer.svg") no-repeat left top;
+    background-size: 239px 276px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+    &::before {
+      content: "24";
+      width: 175px;
+      height: 175px;
+      font: 96px/164px "Open Sans Bold", Verdana, sans-serif;
+      color: #d22856;
+      text-align: center;
+      border: 14px solid #d22856;
+      border-radius: 50%;
+      position: absolute;
+      left: 18px;
+      top: 54px;
+    }
   }
   .layout__center-features {
     width: 620px;
@@ -95,6 +109,12 @@
     background: white url("../img/iphone-screen-mobile@1x.png") no-repeat;
     background-position: left bottom;
     background-size: 268px 547px;
+  }
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    .layout__center-features {
+      background-image: url("../img/iphone-screen-mobile@2x.png");
+      background-size: 268px 547px;
+    }
   }
   .layout__center-reviews {
     width: 660px;
@@ -142,11 +162,25 @@
   .layout__center-breaking-news {
     width: 940px;
     padding-top: 60px;
-    background: white url("../img/24.png") no-repeat;
+    background: white url("../img/icon-timer.svg") no-repeat;
     background-size: 298px 345px;
-    background-position: 2px top;
+    background-position: left top;
+    position: relative;
+    &::before {
+      content: "24";
+      width: 220px;
+      height: 220px;
+      font: 120px/206px "Open Sans Bold", Verdana, sans-serif;
+      color: #d22856;
+      text-align: center;
+      border: 17px solid #d22856;
+      border-radius: 50%;
+      position: absolute;
+      left: 22px;
+      top: 70px;
+    }
   }
-  .layout__center-equip {
+    .layout__center-equip {
     width: 940px;
     margin: 0 auto;
   }
