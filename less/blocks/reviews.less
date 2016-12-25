@@ -111,24 +111,30 @@
     position: relative;
     &::before {
       content: "";
-      width: 40px;
-      height: 117px;
+      width: 27px;
+      height: 27px;
       position: absolute;
       z-index: 5;
-      background: url("../img/arrow-left.png") no-repeat left center;
-      left: 3px;
-      top: 1px;
+      border: 2px solid #bec2c7;
+      border-right-width: 0;
+      border-top-width: 0;
+      left: 5px;
+      top: 20%;
       cursor: pointer;
+      transform: rotate(45deg);
   }
       &::after {
       content: "";
-      width: 40px;
-      height: 117px;
+      width: 27px;
+      height: 27px;
       position: absolute;
       z-index: 5;
-      background: url("../img/arrow-right.png") no-repeat center left;
-      right: -14px;
-      top: 0;
+      border: 2px solid #bec2c7;
+      border-left-width: 0;
+      border-bottom-width: 0;
+      transform: rotate(45deg);
+      right: 8px;
+      top: 20%;
       cursor: pointer;
     }
   }

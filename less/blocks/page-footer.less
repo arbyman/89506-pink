@@ -22,10 +22,30 @@
 .page-footer__htmlacademy {
   fill: #d22856;
 }
+.page-footer__copyright-link {
+  &:hover .page-footer__htmlacademy {
+    fill: #283645;
+  }
+  &:active .page-footer__htmlacademy {
+    fill: fade(#283645, 30);
+  }
+}
+.page-footer__logo {
+  &:hover .page-footer__logo-pink {
+    fill: #d22856;
+  }
+  &:active .page-footer__logo-pink {
+    fill: fade(#283645, 30);
+  }
+  &:active .page-footer__logo-glass{
+    fill: fade(#d22856, 30);
+  }
+}
+
 
 @media (min-width: 660px) {
   .page-footer {
-    padding: 32px 0 40px;
+    padding: 35px 0 43px;
     &--index {
       display: block;
     }

@@ -30,9 +30,69 @@
   cursor: pointer;
   float: right;
   padding: 20px 20px;
-  background: url("../img/icon-menu-burger.svg") no-repeat 20px 20px;
+  position: relative;
+  /*background: url("../img/icon-menu-burger.svg") no-repeat 20px 20px;
   &--close {
     background: url("../img/icon-menu-cross.svg") no-repeat 56px;
+  }*/
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 15px;
+    border: 5px solid white;
+    border-left-width: 0;
+    border-right-width: 0;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    border: 5px solid white;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+  }
+  &:hover::after {
+    border-color: #d22856;
+  }
+  &:hover::before {
+    border-color: #d22856;
+  }
+  &:active::after {
+    border-color: fade(#d22856, 30);
+  }
+  &:active::before {
+    border-color: fade(#d22856, 30);
+  }
+  &--close {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 30px;
+      border: 5px solid white;
+      border-right-width: 0;
+      border-top-width: 0;
+      border-bottom-width: 0;
+      transform: rotate(-45deg);
+      top: 18px;
+      right: 19px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 30px;
+      border: 5px solid white;
+      border-left-width: 0;
+      border-top-width: 0;
+      border-bottom-width: 0;
+      transform: translateX(0px) rotate(45deg);
+      top: 18px;
+      right: 19px;
+    }
   }
 }
 .page-header__top {
@@ -109,6 +169,16 @@
   }
   .page-header__toggle-menu {
     padding: 42px 30px;
+    &--close {
+      &::after {
+        right: 39px;
+        top: 42px;
+      }
+      &::before {
+        right: 39px;
+        top: 42px;
+      }
+    }
   }
   .page-header__bottom {
     min-height: 330px;
@@ -156,8 +226,11 @@
     background: transparent;
   }
   .page-header__title {
-    width: 570px;
+    width: 750px;
     margin: 0 auto;
-    padding: 65px 0 0 5px;
+    padding: 65px 0 0 0;
+    &--photo {
+      width: 570px;
+    }
   }
 }
