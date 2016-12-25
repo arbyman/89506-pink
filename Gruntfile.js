@@ -1,12 +1,12 @@
 "use strict";
 
 module.exports = function(grunt) {
-  
+
   require("load-grunt-tasks")(grunt);
   require('time-grunt')(grunt);
-  
+
   grunt.initConfig({
-    
+
     copy: {
       build: {
         files: [{
@@ -28,11 +28,11 @@ module.exports = function(grunt) {
         }]
       }
     },
-    
+
     clean: {
       build: ["build"]
     },
-    
+
     less: {
       style: {
         files: {
@@ -71,7 +71,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    
+
     imagemin: {
       images: {
         options: {
@@ -83,7 +83,7 @@ module.exports = function(grunt) {
         }]
       }
     },
-    
+
     svgmin: {
       symbols: {
         files: [{
@@ -92,7 +92,7 @@ module.exports = function(grunt) {
         }]
       }
     },
-    
+
     browserSync: {
       server: {
         bsFiles: {
