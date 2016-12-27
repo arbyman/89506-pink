@@ -31,37 +31,37 @@
 .slider__toggle:first-child{
   margin-left: 0;
 }
-.slider__input-1:checked ~ .slider__controls .slider__toggle-1 {
+.slider__input--1:checked ~ .slider__controls .slider__toggle-1 {
   border-color: black;
   background-color: white;
 }
-.slider__input-2:checked ~ .slider__controls .slider__toggle-2 {
+.slider__input--2:checked ~ .slider__controls .slider__toggle-2 {
   border-color: black;
   background-color: white;
 }
-.slider__input-3:checked ~ .slider__controls .slider__toggle-3 {
+.slider__input--3:checked ~ .slider__controls .slider__toggle-3 {
   border-color: black;
   background-color: white;
 }
-.slider__input-1:checked ~ .slider__inner {
+.slider__input--1:checked ~ .slider__inner {
   transform: translateX(0);
 }
-.slider__input-2:checked ~ .slider__inner {
+.slider__input--2:checked ~ .slider__inner {
   transform: translateX(-280px);
 }
-.slider__input-3:checked ~ .slider__inner {
+.slider__input--3:checked ~ .slider__inner {
   transform: translateX(-560px);
 }
 
 @media (min-width: 660px) {
   .slider__inner{
-    width: 1980px;
+    width: 1920px;
   }
-  .slider__input-2:checked ~ .slider__inner {
-    transform: translateX(-660px);
+  .slider__input--2:checked ~ .slider__inner {
+    transform: translateX(-640px);
   }
-  .slider__input-3:checked ~ .slider__inner {
-    transform: translateX(-1320px);
+  .slider__input--3:checked ~ .slider__inner {
+    transform: translateX(-1280px);
   }
 }
 
@@ -69,10 +69,10 @@
   .slider__inner{
     width: 2880px;
   }
-  .slider__input-2:checked ~ .slider__inner {
+  .slider__input--2:checked ~ .slider__inner {
     transform: translateX(-960px);
   }
-  .slider__input-3:checked ~ .slider__inner {
+  .slider__input--3:checked ~ .slider__inner {
     transform: translateX(-1920px);
   }
 }

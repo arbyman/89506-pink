@@ -64,12 +64,11 @@
   }
   &::-ms-thumb {
     border: 2px solid #d32e5a;
-    height: 15px;
-    width: 15px;
-    border-radius: 7px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
     background: #ffffff;
     cursor: pointer;
-    height: 2px;
   }
 }
 .photo-edit__img {
@@ -83,6 +82,7 @@
 }
 .photo-edit__controls {
   height: 139px;
+  width: 280px;
   padding-bottom: 25px;
   border-bottom: 1px solid #dddfe0;
   display: flex;
@@ -261,27 +261,32 @@
     width: 49px;
     height: 49px;
     fill: #d22856;
+    margin-top: -6px;
   }
   .photo-edit__fill {
     flex-basis: 49px;
     width: 49px;
     height: 49px;
     fill: #d22856;
+    margin-top: -2px;
   }
   .photo-edit__contrast {
     flex-basis: 49px;
-    width: auto;
-    height: auto;
+    width: 32px;
+    height: 32px;
     fill: #d22856;
   }
   .photo-edit__range--crop {
     order: -5;
+    margin-top: -10px;
   }
   .photo-edit__range--fill {
     order: -3;
+    margin-top: -11px;
   }
   .photo-edit__range--contrast {
     order: -1;
+    margin-top: -5px;
   }
   .photo-edit__btn-post {
     width: 45%;

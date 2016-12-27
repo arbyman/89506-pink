@@ -9,7 +9,7 @@
     padding-bottom: 396px;
   }
 }
-@media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+@media (min-resolution: 1.5dppx) and (max-width: 569px), (min-resolution: 144dpi) and (max-width: 569px) {
   .page-header {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: 700px auto;
@@ -29,8 +29,11 @@
   border: 0;
   cursor: pointer;
   float: right;
-  padding: 20px 20px;
+  margin: 20px;
+  padding: 0;
   position: relative;
+  background-color: transparent;
+  outline: none;
   &::after {
     content: "";
     position: absolute;
@@ -39,6 +42,8 @@
     border: 5px solid white;
     border-left-width: 0;
     border-right-width: 0;
+    left: 0;
+    top: 0;
   }
   &::before {
     content: "";
@@ -49,6 +54,8 @@
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 0;
+    left: 0;
+    top: 0;
   }
   &:hover::after {
     border-color: #d22856;
@@ -63,6 +70,9 @@
     border-color: fade(#d22856, 30%);
   }
   &--close {
+    width: 30px;
+    height: 30px;
+    margin: 18px 20px 0 0;
     &::after {
       content: "";
       position: absolute;
@@ -72,9 +82,9 @@
       border-right-width: 0;
       border-top-width: 0;
       border-bottom-width: 0;
-      transform: rotate(-45deg);
-      top: 18px;
-      right: 19px;
+      transform: translateX(16px) rotate(-45deg);
+      top: 0;
+      left: 0;
     }
     &::before {
       content: "";
@@ -85,9 +95,9 @@
       border-left-width: 0;
       border-top-width: 0;
       border-bottom-width: 0;
-      transform: translateX(0px) rotate(45deg);
-      top: 18px;
-      right: 19px;
+      transform: translateX(16px) rotate(45deg);
+      top: 0;
+      left: 0;
     }
   }
 }
@@ -98,7 +108,7 @@
 }
 .page-header__logo {
   padding-top: 4px;
-  margin-left: -60px;
+  margin-left: -51px;
   fill: white;
   &:hover {
     fill: #d22856;
@@ -106,6 +116,9 @@
   &:active {
     fill: fade(white, 30%);
   }
+}
+.page-header__logo-glass {
+  display: none;
 }
 .page-header__logo-stars {
   fill: transparent;
@@ -119,7 +132,7 @@
   vertical-align: middle;
   background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat 50% -65px;
 }
-@media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+@media (min-resolution: 1.5dppx) and (max-width: 569px), (min-resolution: 144dpi) and (max-width: 569px) {
   .page-header__bottom {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: 700px auto;
@@ -161,20 +174,16 @@
     min-height: 110px;
   }
   .page-header__logo {
-    padding-top: 28px;
-    margin-left: 33px;
+    padding-top: 27px;
+    margin-left: 40px;
+  }
+  .page-header__logo-glass {
+    display: block;
   }
   .page-header__toggle-menu {
-    padding: 42px 30px;
+    margin: 40px;
     &--close {
-      &::after {
-        right: 39px;
-        top: 42px;
-      }
-      &::before {
-        right: 39px;
-        top: 42px;
-      }
+      margin: 42px 40px 0 0;
     }
   }
   .page-header__bottom {
